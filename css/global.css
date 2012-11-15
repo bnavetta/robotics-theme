@@ -22,10 +22,10 @@ a:visited {
   text-decoration: none;
 }
 a:link {
-  color: #e6e600;
+  color: #ffb90f;
 }
 a:visited {
-  color: #c0c0c0;
+  color: #ffb90f;
 }
 a:hover {
   color: #32cd32;
@@ -45,8 +45,8 @@ hr {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #000000;
-  color: #fffafa;
+  background-color: #dcdcdc;
+  color: #000000;
 }
 h1,
 h2,
@@ -257,7 +257,7 @@ div.messages ul li {
   -webkit-border-radius: 5px;
 }
 .description {
-  color: #fffafa;
+  color: #000000;
 }
 ul.tabs li a {
   color: #000000;
@@ -273,13 +273,13 @@ ul.vertical-tabs-list li.selected a strong {
   color: #cf0000;
 }
 table a {
-  color: #000000;
+  color: #0f0b00;
 }
 table a:link {
-  color: #000000;
+  color: #0f0b00;
 }
 table a:visited {
-  color: #414141;
+  color: #0f0b00;
 }
 table a:hover {
   color: #000000;
