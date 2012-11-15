@@ -1,0 +1,28 @@
+//Rounded corners
+.rounded(@radius: 5px) {
+	border-radius:@radius;
+	-moz-border-radius:@radius;
+	-webkit-border-radius:@radius;
+}
+
+.maroon-gradient {
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #A80C0C 0%, #210306 100%);
+	
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #A80C0C 0%, #210306 100%);
+	
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #A80C0C 0%, #210306 100%);
+	
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #A80C0C), color-stop(1, #210306));
+	
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #A80C0C 0%, #210306 100%);
+	
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #A80C0C 0%, #210306 100%);
+}

@@ -1,0 +1,74 @@
+/*
+* Based on system.messages.css
+*/
+
+@msgBorder: 10%;
+@msgTxt: 20%;
+@msgBg: 50%;
+
+div.messages {
+  background-position: 8px 8px; /* LTR */
+  background-repeat: no-repeat;
+  border: 2px solid;
+  margin: 6px 0;
+  padding: 10px 10px 10px 50px; /* LTR */
+  .rounded
+}
+
+a.close {
+	float: right;
+	text-decoration: none;
+	font-weight: bold;
+	color: red;
+}
+
+a.close:hover {
+	color: white;
+}
+
+div.status {
+  border-color: darken(@info, @msgBorder); /* #be7 */
+}
+div.status,
+.ok {
+  color: darken(@info, @msgTxt); /* #234600 */
+}
+div.status,
+table tr.ok {
+  background-color: lighten(@info, @msgBg); /* #f8fff0 */
+}
+
+div.warning {
+  border-color: darken(@warn, @msgBorder); /* #ed5 */
+}
+div.warning,
+.warning {
+  color: darken(@warn, @msgTxt);/* #840 */
+}
+div.warning,
+table tr.warning {
+  background-color: lighten(@warn, @msgBg);/* #fffce5 */
+}
+
+div.error {
+  border-color: darken(@error, @msgBorder);/* #ed541d */
+}
+div.error,
+.error {
+  color: darken(@error, @msgTxt);/*#8c2e0b */
+}
+div.error,
+table tr.error {
+  background-color: lighten(@error, @msgBg);/* #fef5f1 */
+}
+div.error p.error {
+  color: #333;
+}
+
+div.messages ul {
+  margin: 0 0 0 1em; /* LTR */
+  padding: 0;
+}
+div.messages ul li {
+  list-style-image: none;
+}

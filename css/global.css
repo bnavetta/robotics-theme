@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+.maroon-gradient {
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #a80c0c), color-stop(1, #210306));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom right, #a80c0c 0%, #210306 100%);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:link {
+  color: #e6e600;
+}
+a:visited {
+  color: #c0c0c0;
+}
+a:hover {
+  color: #32cd32;
+  text-decoration: none;
+}
+a:active {
+  color: #202124;
+  text-decoration: none;
+  color: #000;
+}
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #000000;
+  color: #fffafa;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #800000;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+/* Make site titles the same size if it's an H1 (home) or H2 (internal) */
+h1.site-name,
+h2.site-name {
+  font-size: 36px;
+}
+/* Make it a bit smaller for block headers */
+h2.block-title {
+  font-size: 18px;
+  margin: 0;
+}
+h2.node-title {
+  font-size: 28px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 19px;
+}
+h5 {
+  font-size: 17px;
+}
+h6 {
+  font-size: 15px;
+}
+ol {
+  list-style: decimal;
+}
+ul {
+  list-style: disc;
+}
+ul ul,
+ol ol {
+  padding-top: 0.5em;
+}
+.node ol,
+.node ul {
+  padding-left: 1.2em;
+}
+.node ul.inline,
+.node ol.inline {
+  padding-left: 0;
+}
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px;
+}
+dt,
+.admin h3 {
+  font-size: 18px;
+  margin: 0;
+}
+dd {
+  padding-left: 10px;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+/*
+* Based on system.messages.css
+*/
+div.messages {
+  background-position: 8px 8px;
+  /* LTR */
+
+  background-repeat: no-repeat;
+  border: 2px solid;
+  margin: 6px 0;
+  padding: 10px 10px 10px 50px;
+  /* LTR */
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+a.close {
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  color: red;
+}
+a.close:hover {
+  color: white;
+}
+div.status {
+  border-color: #134d13;
+  /* #be7 */
+
+}
+div.status,
+.ok {
+  color: #092409;
+  /* #234600 */
+
+}
+div.status,
+table tr.ok {
+  background-color: #a8eaa8;
+  /* #f8fff0 */
+
+}
+div.warning {
+  border-color: #b3b300;
+  /* #ed5 */
+
+}
+div.warning,
+.warning {
+  color: #808000;
+  /* #840 */
+
+}
+div.warning,
+table tr.warning {
+  background-color: #ffffe6;
+  /* #fffce5 */
+
+}
+div.error {
+  border-color: #9c0000;
+  /* #ed541d */
+
+}
+div.error,
+.error {
+  color: #690000;
+  /*#8c2e0b */
+
+}
+div.error,
+table tr.error {
+  background-color: #ffcfcf;
+  /* #fef5f1 */
+
+}
+div.error p.error {
+  color: #333;
+}
+div.messages ul {
+  margin: 0 0 0 1em;
+  /* LTR */
+
+  padding: 0;
+}
+div.messages ul li {
+  list-style-image: none;
+}
+.block {
+  background-color: #696969;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  margin: 10px;
+}
+#section-header {
+  background-color: #800000;
+  padding: 10px;
+  /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #a80c0c), color-stop(1, #210306));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top left, #a80c0c 0%, #210306 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to bottom right, #a80c0c 0%, #210306 100%);
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+#region-content {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.description {
+  color: #fffafa;
+}
+ul.tabs li a {
+  color: #000000;
+}
+ul.tabs li.active a {
+  color: #cf0000;
+}
+ul.vertical-tabs-list li a {
+  color: #000000;
+}
+ul.vertical-tabs-list li.selected a strong {
+  font-weight: 900;
+  color: #cf0000;
+}
+table a {
+  color: #000000;
+}
+table a:link {
+  color: #000000;
+}
+table a:visited {
+  color: #414141;
+}
+table a:hover {
+  color: #000000;
+}
+td {
+  color: #000000;
+}

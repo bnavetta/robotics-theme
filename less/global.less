@@ -1,0 +1,134 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+@import "includes/constants.less";
+@import "includes/mixins.less";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:link {
+	color: @linkColor;
+}
+
+a:visited {
+	color: @linkVisitedColor
+}
+
+a:hover {
+  color: @linkHoverColor;
+  text-decoration: none;
+}
+
+a:active {
+  color: #202124;
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border: none;
+  height: 1px;
+  background: #5294c1;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: @backgroundColor;
+	color: @textColor;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: @headingColor;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+/* Make site titles the same size if it's an H1 (home) or H2 (internal) */
+h1.site-name,
+h2.site-name {
+  font-size: 36px;
+}
+
+/* Make it a bit smaller for block headers */
+h2.block-title {
+  font-size: 18px;
+  margin: 0;	
+}
+
+h2.node-title {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: disc;
+}
+
+ul ul,
+ol ol {
+  padding-top: 0.5em;
+}
+
+.node ol,
+.node ul {
+  padding-left: 1.2em;
+}
+
+.node ul.inline,
+.node ol.inline {
+  padding-left: 0;
+}
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol,
+ul, pre, table, address, fieldset {
+  margin-bottom: 20px;
+}
+
+dt, .admin h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+dd {
+  padding-left: 10px;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+//put imports here so they can overrride defaults
+@import "includes/messages.less";
+@import "includes/components.less";

@@ -1,0 +1,58 @@
+.block {
+	background-color: @blockBackground;
+	padding: 10px;
+	border: 1px solid lighten(@blockBackground, 60%);
+	margin: 10px;
+}
+
+#section-header {
+	background-color: @headerBackground;
+	padding: 10px;
+	.maroon-gradient;
+	.rounded;
+}
+
+#region-content {
+	.rounded;
+}
+
+.description {
+	color: @textColor;
+}
+
+ul.tabs li a {
+	color: @tabText;
+}
+
+ul.tabs li.active a {
+	color: @activeTabText;
+}
+
+ul.vertical-tabs-list li a {
+	color: @tabText;
+}
+
+ul.vertical-tabs-list li.selected a strong {
+	font-weight: 900;
+	color: @activeTabText;
+}
+
+table a {
+	color: darken(@linkColor, 50%);
+}
+
+table a:link {
+	color: darken(@linkColor, 50%);
+}
+
+table a:visited {
+	color: darken(@linkVisitedColor, 50%);
+}
+
+table a:hover {
+	color: darken(@linkHoverColor, 50%);
+}
+
+td {
+	color: @tableText;
+}
