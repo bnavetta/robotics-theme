@@ -34,6 +34,7 @@
 				<exclude name=".git/**/*"/>
 				<exclude name="Readme.md"/>
 				<exclude name="lib/**/*"/>
+				<exclude name="scratch/**/*"/>
 			</fileset>
 		</ftp>
 	</target>
