@@ -1,0 +1,41 @@
+<project name="robotics-website" basedir="." default="compile">
+	
+	<property name="less.dir" location="less"/>
+	<property name="css.dir" location="css"/>
+	<property name="theme.base" value="cms/sites/all/themes/robotics"/>
+	
+	<path id="less.path">
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<target name="clean" description="Remove generated files">
+		<delete dir="${css.dir}"/>
+	</target>
+	
+	<target name="compile" description="Compile Less source files">
+		<taskdef name="lessc" classname="com.bennavetta.lessc.LessTask" classpathref="less.path"/>
+		<lessc destDir="${css.dir}">
+			<fileset dir="${less.dir}">
+				<include name="*.less"/>
+			</fileset>
+		</lessc>
+	</target>
+	
+	<target name="deploy" depends="compile" description="Upload the theme to the website">
+		<property file="build.properties"/>
+		<ftp server="team1277.org" userid="${ftp.user}" password="${ftp.password}" remotedir="${theme.base}" action="send" verbose="yes">
+			<fileset dir="${basedir}">
+				<exclude name="less/**/*.less"/>
+				<exclude name="build.xml"/>
+				<exclude name="build.properties"/>
+				<exclude name=".gitignore"/>
+				<exclude name=".git/**/*"/>
+				<exclude name="Readme.md"/>
+				<exclude name="lib/**/*"/>
+			</fileset>
+		</ftp>
+	</target>
+	
+</project>

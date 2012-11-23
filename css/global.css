@@ -16,16 +16,45 @@
   background-image: -webkit-linear-gradient(top left, #a80c0c 0%, #210306 100%);
   /* W3C Markup, IE10 Release Preview */
   background-image: linear-gradient(to bottom right, #a80c0c 0%, #210306 100%);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.gray-flat-gradient {
+  background: #eeeeee;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #eeeeee));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+  /* IE6-9 */
+
 }
 a:link,
 a:visited {
   text-decoration: none;
 }
 a:link {
-  color: #ffb90f;
+  color: #f5ad00;
 }
 a:visited {
-  color: #ffb90f;
+  color: #f5ad00;
 }
 a:hover {
   color: #32cd32;
@@ -45,7 +74,7 @@ hr {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #dcdcdc;
+  background-color: #f8f8ff;
   color: #000000;
 }
 h1,
@@ -225,10 +254,35 @@ div.messages ul li {
   list-style-image: none;
 }
 .block {
-  background-color: #696969;
+  background: #eeeeee;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #eeeeee));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0);
+  /* IE6-9 */
+
   padding: 10px;
-  border: 1px solid #ffffff;
   margin: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
 #section-header {
   background-color: #800000;
@@ -247,6 +301,9 @@ div.messages ul li {
   background-image: -webkit-linear-gradient(top left, #a80c0c 0%, #210306 100%);
   /* W3C Markup, IE10 Release Preview */
   background-image: linear-gradient(to bottom right, #a80c0c 0%, #210306 100%);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -261,6 +318,14 @@ div.messages ul li {
 }
 ul.tabs li a {
   color: #000000;
+  -webkit-border-top-left-radius: 5px;
+  -khtml-border-radius-topleft: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -khtml-border-radius-topright: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
 }
 ul.tabs li.active a {
   color: #cf0000;
@@ -273,13 +338,13 @@ ul.vertical-tabs-list li.selected a strong {
   color: #cf0000;
 }
 table a {
-  color: #0f0b00;
+  color: #000000;
 }
 table a:link {
-  color: #0f0b00;
+  color: #000000;
 }
 table a:visited {
-  color: #0f0b00;
+  color: #000000;
 }
 table a:hover {
   color: #000000;

@@ -1,0 +1,5 @@
+# CSS is generated from Less source
+css/
+
+# Don't upload the FTP password
+build.properties
