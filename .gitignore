@@ -3,3 +3,5 @@ css/
 
 # Don't upload the FTP password
 build.properties
+
+!lib/*
