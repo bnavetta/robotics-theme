@@ -10,6 +10,24 @@
 		</fileset>
 	</path>
 	
+	<macrodef name="upload">
+		<attribute name="server" default="team1277.org"/>
+		<sequential>
+			<ftp server="@{server}" userid="${ftp.user}" password="${ftp.password}" remotedir="${theme.base}" action="send" verbose="yes">
+				<fileset dir="${basedir}">
+					<exclude name="less/**/*.less"/>
+					<exclude name="build.xml"/>
+					<exclude name="build.properties"/>
+					<exclude name=".gitignore"/>
+					<exclude name=".git/**/*"/>
+					<exclude name="Readme.md"/>
+					<exclude name="lib/**/*"/>
+					<exclude name="scratch/**/*"/>
+				</fileset>
+			</ftp>
+		</sequential>
+	</macrodef>
+	
 	<target name="clean" description="Remove generated files">
 		<delete dir="${css.dir}"/>
 	</target>
@@ -25,18 +43,8 @@
 	
 	<target name="deploy" depends="compile" description="Upload the theme to the website">
 		<property file="build.properties"/>
-		<ftp server="team1277.org" userid="${ftp.user}" password="${ftp.password}" remotedir="${theme.base}" action="send" verbose="yes">
-			<fileset dir="${basedir}">
-				<exclude name="less/**/*.less"/>
-				<exclude name="build.xml"/>
-				<exclude name="build.properties"/>
-				<exclude name=".gitignore"/>
-				<exclude name=".git/**/*"/>
-				<exclude name="Readme.md"/>
-				<exclude name="lib/**/*"/>
-				<exclude name="scratch/**/*"/>
-			</fileset>
-		</ftp>
+		<upload server="team1277.org"/>
+		<upload server="www.team1277.org"/>
 	</target>
 	
 </project>
